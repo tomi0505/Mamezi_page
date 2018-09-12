@@ -9,4 +9,4 @@ script.js - wersja produkcyjna, kompilacja za pomocą Babel [http://babeljs.io/e
 [https://github.com/tomi0505/Mamezi_page/blob/master/_assets/scripts/script.js]
 
 
-<img src="https://cdn.pixabay.com/photo/2012/04/01/18/29/four-leaf-clover-23901_960_720.png" alt="czterolistna kończyna">
+<img width="40" src="https://cdn.pixabay.com/photo/2012/04/01/18/29/four-leaf-clover-23901_960_720.png" alt="czterolistna kończyna">

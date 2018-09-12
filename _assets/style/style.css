@@ -1,0 +1,336 @@
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('../fonts/Gotham/Gotham-Book.woff2') format('woff2'),
+        url('../fonts/Gotham/Gotham-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url('../fonts/Gotham/Gotham-Black.woff2') format('woff2'),
+        url('../fonts/Gotham/Gotham-Black.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('../fonts/Gotham/Gotham-Light.woff2') format('woff2'),
+        url('../fonts/Gotham/Gotham-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('../fonts/Gotham/Gotham-Bold.woff2') format('woff2'),
+        url('../fonts/Gotham/Gotham-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+	font-size: 14px;
+}
+
+html * {
+	outline: none;
+}
+
+body {
+  font-family: 'Gotham-Book', sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+/*-I_HEADER-*/
+.header  {
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ea2423;
+	overflow: hidden;
+}
+
+/*CLOCK*/
+.header .clock {
+	margin-top: 85px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	width: 249px;
+	height: 242px;
+	font-family: 'Gotham-Black';
+	font-size: 2.875rem;
+	background-image: url(../img/clock.png);
+	background-repeat: no-repeat;
+}
+
+.header .clock .important {
+	display: block;
+	color: #ffef3a;
+}
+
+/*INFORMATION*/
+.header .clock .information {
+	position: absolute;
+	top: -85px;
+	left: 0;
+	width: 294px;
+	height: 87px;
+	font-family: 'Gotham-Book';
+	font-size: 1.625rem;
+	line-height: 87px;
+	background-color: #000000;
+}
+
+.header .clock .information::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	border-top: 31px solid #000000;
+	border-right: 31px solid transparent;
+}
+
+.header .clock .information .bold {
+	font-weight: bold;
+}
+
+/*DELIVERY*/
+.header .delivery {
+	margin: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	height: 120px;
+	color: #000000;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+
+.header .delivery img {
+	margin: 5px 0;
+}
+
+/*DISCOUNT*/
+.header .discount {
+	font-size: 1.375rem;
+	color: #363337;
+}
+
+.header .discount .important {
+	display: block;
+	font-size: 11.5625rem;
+	color: #ffef3a;
+}
+
+.header .discount .important .sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+
+/*COUNTER*/
+.header .counter {
+	margin-top: 40px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border: 3px solid #ffffff;
+}
+
+/*TIMER*/
+.header .counter .title {
+	font-family: 'Gotham-Light';
+}
+
+.header .counter .timer {
+	display: flex;
+}
+
+.header .counter .timer .col {
+	font-family: 'Gotham-Bold';
+	color: #2c2423;
+}
+
+.header .counter .timer .col:first-child {
+	margin-left: 0;
+}
+
+.header .counter .timer .col:last-child {
+	margin-right: 0;
+}
+
+.header .counter .timer .time {
+	margin-left: 7.5px;
+	padding: 10px 0;
+	display: block;
+	font-size: 2.875rem;
+	color: #ffffff;
+}
+
+.header .counter .timer .time::after {
+	content: ":";
+	margin-left: 7.5px;
+}
+
+.header .counter .timer .col:last-child .time::after {
+	content: "";
+}
+
+
+/*-II_MAIN-*/
+.main {
+	color: #000000;
+}
+
+.main .main-header {
+	margin: 50px 0;
+}
+
+/*TITLE*/
+.main .main-header .title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.25rem;
+}
+
+.main .main-header .title::before {
+	content: url(../img/small_clock.png);
+	margin-right: 20px;
+}
+
+.main .main-header .title .bold {
+	font-weight: bold;
+}
+
+/*ALERT*/
+.main .main-header .alert {
+	margin: 25px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main .main-header .alert::before {
+	content: "!";
+	margin-right: 10px;
+	display: block;
+	width: 22px;
+	height: 22px;
+	flex-shrink: 0;
+	line-height: 22px;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #ea2423;
+}
+
+/*SHOW_PRODUCTS*/
+.main .main-header .showProducts label {
+	margin-right: 2px;
+}
+
+
+/*-III_PRODUCTS-*/
+.products {
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/*PRODUCT_BOX*/
+.products .productBox {
+	margin: 4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	flex-basis: 40%;
+	height: calc(460px/2.5);
+	border: 1px solid #ebebeb;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+/*SALE_INFO*/
+/*QUANTITY*/
+.products .productBox .saleInfo .quantity {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.8125rem;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+.products .productBox .saleInfo .quantity::before {
+	content: url(../img/shopping_cart.png);
+	margin-right: 5px;
+}
+
+/*PROMOTION*/
+.products .productBox .saleInfo .promotion {
+	padding: 0 3px;
+	font-size: 0.9375rem;
+	color: #ff0000;
+	font-weight: 400;
+	line-height: 24px;
+	border: 1px solid #ff0000;
+}
+
+.products .productBox .saleInfo .promotion .important {
+	font-weight: 700;
+}
+
+/*PRODUCT*/
+.products .productBox .product img {
+	margin-bottom: 13px;
+	width: 65%;
+	height: 65%;
+}
+
+/*PRICE*/
+.products .productBox .product .description .row .price {
+	font-size: 1.25rem;
+	color: #ff0000;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+/*OLD_PRICE*/
+.products .productBox .product .description .row .oldPrice {
+	font-size: 0.875rem;
+	color: #1a171b;
+	font-weight: 400;
+	line-height: 20px;
+	text-decoration: line-through;
+}
+
+/*TITLE*/
+.products .productBox .product .description .title,
+.products .productBox .product .description .company {
+	font-size: 0.8125rem;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+/*COMPANY*/
+.products .productBox .product .description .company {
+	color: #9f9f9f;
+}
+
+/*HIDDEN*/
+.products .hidden {
+	display: none;
+}

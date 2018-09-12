@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="_assets/style/reset.css">
+        <link rel="stylesheet" href="_assets/style/style.css">
+        <link rel="stylesheet" href="_assets/style/rwd.css">
+        <title>Mamezi_page</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="clock">
+                <h1><span class="important">GORĄCY</span> CZWARTEK</h1>
+                <div class="information"><span class="bold">WŁAŚNIE</span> TRWA!</div>
+            </div>
+            <aside class="delivery">
+                <img src="_assets/img/delivery-truck.png" alt="furgonetka">
+                <h4>dostawa<br>gratis</h4>
+            </aside>
+            <h2 class="discount">RABATY NAWET DO <span class="important">80<sup class="sup">%</sup></span></h2>
+            <aside class="counter">
+                <h3 class="title">DO KOŃCA POZOSTAŁO:</h3>
+                <div class="timer">
+                    <div class="col"><time datetime="4d" class="time day">4</time>DNI</div>
+                    <div class="col"><time datetime="11h" class="time hour">11</time>GODZ</div>
+                    <div class="col"><time datetime="16m" class="time minute">16</time>MIN</div>
+                    <div class="col"><time datetime="42s" class="time second">42</time>SEK</div>
+                </div>
+            </aside>
+        </header>
+        <main class="main">
+            <div class="main-header">
+                <h2 class="title">PRODUKTY NA GODZINE&nbsp;<span class="bold">10:00</span></h2>
+                <h3 class="alert">Akcja “Gorący Czwartek” nie łączy się z innymi promocjami</h3>
+                <form class="showProducts">
+                    <label for="productsCounter">Produktów na stronie: </label>
+                    <select id="productsCounter">
+                        <option value="2">2</option>
+                        <option selected value="4">4</option>
+                        <option value="8">8</option>
+                    </select>
+                </form>
+            </div>
+            <!-- START-PRODUCTS -->
+            <section class="products">
+                <section class="productBox">
+                    <div class="saleInfo">
+                        <p class="quantity">sztuk: 1</p>
+                        <p class="promotion hidden">oszczędzasz: <span class="important">2000zł</span></p>
+                    </div>
+                    <figure class="product">
+                        <figcaption class="description">
+                            <div class="row">
+                                <h3 class="price">3690 zł</h3>
+                                <h4 class="oldPrice hidden">5690 zł</h4>
+                            </div>
+                            <h2 class="title">Kanapa 3 firmy Kler kolekcja Canone W001</h2>
+                            <p class="company hidden">Grupa Kler</p>
+                        </figcaption>
+                    </figure>
+                </section>
+            </section>
+            <!-- END-PRODUCTS -->
+        </main>
+    <script src="_assets/scripts/script.js"></script>
+    </body>
+</html>

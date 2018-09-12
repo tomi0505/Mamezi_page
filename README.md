@@ -7,3 +7,6 @@ script_original.js - wersja developerska.
 
 script.js - wersja produkcyjna, kompilacja za pomocą Babel [http://babeljs.io/en/repl.html] dla IE6
 [https://github.com/tomi0505/Mamezi_page/blob/master/_assets/scripts/script.js]
+
+
+https://cdn.pixabay.com/photo/2012/04/01/18/29/four-leaf-clover-23901_960_720.png

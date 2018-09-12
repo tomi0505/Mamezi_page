@@ -73,6 +73,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
 	flex-grow: 1;
 }
 
@@ -82,6 +83,8 @@
 
 /*DESCRIPTION*/
 .products .productBox .product .description {
+	padding-left: 13px;
+	align-self: flex-start;
 	text-align: left;
 }
 
@@ -183,6 +186,7 @@ html {
 .products .productBox .saleInfo {
 	align-items: stretch;
 	height: 40px;
+	flex-shrink: 0;
 }
 
 /*QUANTITY*/
@@ -194,7 +198,7 @@ html {
 
 /*PRODUCT*/
 .products .productBox .product {
-	padding-top: 104px;
+	padding-top: 84px;
 }
 
 .products .productBox .product img {
@@ -252,7 +256,19 @@ html {
 /*-III_PRODUCTS-*/
 /*PRODUCT_BOX*/
 .products .productBox {
-	margin: 10.25px;
+	margin: 13.6px;
+}
+
+.products .productBox:first-child {
+	margin-left: 0;
+}
+
+.products .productBox:nth-child(5n) {
+	margin-left: 0;
+}
+
+.products .productBox:nth-child(4n) {
+	margin-right: 0;
 }
 
 }

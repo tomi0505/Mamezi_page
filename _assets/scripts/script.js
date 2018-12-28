@@ -8,7 +8,7 @@ var refreshProductsObject = "";
 document.addEventListener("DOMContentLoaded", function () {
 
   // AJAX
-  var url = "http://tomaszgrzyb.eu/projects/Mamezi_page/_assets/scripts/products.json";
+  var url = "http://tomaszgrzyb.eu/projects/shop_page/_assets/scripts/products.json";
 
   var request = new XMLHttpRequest();
   request.open("GET", url);
@@ -100,7 +100,7 @@ function updateElements(products) {
       items.removeChild(items.firstChild);
 
       var _image = new Image();
-      _image.src = "http://tomaszgrzyb.eu/projects/Mamezi_page/_assets/img/empty_banner.png";
+      _image.src = "http://tomaszgrzyb.eu/projects/shop_page/_assets/img/empty_banner.png";
 
       items.prepend(_image);
     }

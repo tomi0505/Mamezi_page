@@ -6,7 +6,7 @@ let refreshProductsObject = "";
 document.addEventListener("DOMContentLoaded", () => {
 
   // AJAX
-  const url = "http://tomaszgrzyb.eu/projects/Mamezi_page/_assets/scripts/products.json";
+  const url = "http://tomaszgrzyb.eu/projects/shop_page/_assets/scripts/products.json";
 
   const request = new XMLHttpRequest();
   request.open("GET", url);
@@ -106,7 +106,7 @@ function updateElements(products) {
       items.removeChild(items.firstChild);
 
       const image = new Image();
-      image.src = `http://tomaszgrzyb.eu/projects/Mamezi_page/_assets/img/empty_banner.png`;
+      image.src = `http://tomaszgrzyb.eu/projects/shop_page/_assets/img/empty_banner.png`;
 
       items.prepend(image);
 
